@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="screen">
+    <div class="header">
+      <div class="hamburger"></div>
+    </div>
+
+    <main class="main">
+      <img src="assets/logo1.png" class="logo" alt="logo">
+      <h1 class="center">Forneça o seu e-mail e senha</h1>
+
+      <!-- Form de login; o script.js intercepta o submit -->
+      <form id="loginForm" class="mt-4">
+        <label>E-mail</label>
+        <input class="input" type="email" name="email" placeholder="Seu e-mail" required>
+
+        <label class="mt-4">Senha</label>
+        <input class="input" type="password" name="password" placeholder="Sua senha" required>
+
+        <button class="btn mt-8" type="submit">Login</button>
+
+        <button type="button" class="btn link mt-4"
+                onclick="alert('Recuperação de senha não implementada (demo).')">
+          Esqueci minha senha
+        </button>
+
+        <a class="btn link" href="cadastro.html">Criar novo usuário</a>
+      </form>
+    </main>
+
+    <div class="footer"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

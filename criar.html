@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Criar tarefa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="screen">
+    <div class="header">
+      <div class="hamburger"></div>
+    </div>
+
+    <main class="main">
+      <h1>Criar tarefas</h1>
+
+      <!-- O script.js faz upload (DataURL) e salva no LocalStorage -->
+      <form id="createTaskForm" class="mt-4">
+        <label>Título da tarefa</label>
+        <input class="input" name="title" type="text" placeholder="Ex.: Ler capítulo 1" required>
+
+        <label class="mt-4">Descrição</label>
+        <textarea class="textarea" name="description" placeholder="Detalhes da tarefa"></textarea>
+
+        <label class="mt-4">Imagem (opcional)</label>
+        <input class="file" name="image" type="file" accept="image/*">
+
+        <button class="btn mt-8" type="submit">Salvar tarefa</button>
+      </form>
+
+      <a class="btn link mt-4" href="tarefas.html">Minhas tarefas</a>
+    </main>
+
+    <div class="footer"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
