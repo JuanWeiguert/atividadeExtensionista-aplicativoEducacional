@@ -307,6 +307,7 @@ function attachCreateTaskHandler() {
    Inicialização por página
 ------------------------- */
 document.addEventListener("DOMContentLoaded", () => {
+
   // Protege páginas que exigem login
   const pagesThatNeedAuth = [
     "menu.html", "criar.html", "tarefas.html",
@@ -314,7 +315,9 @@ document.addEventListener("DOMContentLoaded", () => {
     "indicacoes.html", "livro.html",
     "sobre.html", "objetivos.html"
   ];
+
   const path = location.pathname.split("/").pop();
+
   if (pagesThatNeedAuth.includes(path)) {
     requireAuth();
   }
@@ -325,5 +328,13 @@ document.addEventListener("DOMContentLoaded", () => {
   renderDynamicActivity();
   renderDynamicBook();
 
-  
+  // BOTÃO HAMBÚRGUER
+  const hamburger = document.querySelector(".hamburger");
+
+  if (hamburger) {
+    hamburger.addEventListener("click", () => {
+      window.location.href = "menu.html";
+    });
+  }
+
 });
