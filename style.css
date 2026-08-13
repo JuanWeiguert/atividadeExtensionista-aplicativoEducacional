@@ -74,7 +74,6 @@ html, body {
   height: 20px;
   background-image:
     repeating-linear-gradient(90deg, #000 0 16px, var(--app-green) 16px 30px);
-   border-radius: 0 !important;
 }
 
 /* Utilitários */
