@@ -72,6 +72,8 @@ html, body {
 /* Rodapé com “faixa xadrez” */
 .footer {
   height: 20px;
+  width: 100%;
+  flex-shrink: 0;
   background-image:
     repeating-linear-gradient(90deg, #000 0 16px, var(--app-green) 16px 30px);
 }
