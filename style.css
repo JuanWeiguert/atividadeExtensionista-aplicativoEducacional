@@ -28,11 +28,13 @@ html, body {
 /* “Moldura” para simular celular */
 .screen {
   margin: 0 auto;
+  width: 100%;
   max-width: 420px;  /* largura mobile confortável */
   min-height: 100dvh;
   background: var(--surface);
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 /* Cabeçalho simples com “hamburger” (decorativo) */
