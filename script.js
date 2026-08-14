@@ -303,6 +303,16 @@ function attachCreateTaskHandler() {
   });
 }
 
+function attachHamburgerHandler() {
+  const hamburger = document.querySelector(".hamburger");
+
+  if (!hamburger) return;
+
+  hamburger.addEventListener("click", () => {
+    window.location.href = "menu.html";
+  });
+}
+
 /* -------------------------
    Inicialização por página
 ------------------------- */
@@ -324,17 +334,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   attachAuthHandlers();
   attachCreateTaskHandler();
+   
   renderTasksList();
   renderDynamicActivity();
   renderDynamicBook();
 
-  // BOTÃO HAMBÚRGUER
-  const hamburger = document.querySelector(".hamburger");
-
-  if (hamburger) {
-    hamburger.addEventListener("click", () => {
-      window.location.href = "menu.html";
-    });
-  }
+  // Ativa o botão hambúrguer
+  attachHamburgerHandler();
 
 });
