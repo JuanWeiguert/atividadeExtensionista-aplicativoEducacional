@@ -334,12 +334,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   attachAuthHandlers();
   attachCreateTaskHandler();
+   // Ativa o botão hambúrguer
+  attachHamburgerHandler();
    
   renderTasksList();
   renderDynamicActivity();
   renderDynamicBook();
-
-  // Ativa o botão hambúrguer
-  attachHamburgerHandler();
 
 });
