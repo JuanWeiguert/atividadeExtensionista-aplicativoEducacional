@@ -264,3 +264,10 @@ p { color: var(--muted); line-height: 1.5; }
   border: none;
   cursor: pointer;
 }
+
+/* Centraliza verticalmente as telas de login e cadastro */
+.main-auth {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
