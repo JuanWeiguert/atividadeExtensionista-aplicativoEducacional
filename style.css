@@ -271,3 +271,10 @@ p { color: var(--muted); line-height: 1.5; }
   flex-direction: column;
   justify-content: center;
 }
+
+/* Centraliza o conteúdo da tela inicial */
+.main-index {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
