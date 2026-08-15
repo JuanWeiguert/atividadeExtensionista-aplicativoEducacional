@@ -166,6 +166,7 @@ function renderTasksList() {
         <h3>${t.title}</h3>
         <p>${t.description || ""}</p>
         <div class="actions">
+          <button class="btn-small btn-open" data-id="${t.id}">Abrir tarefa</button>
           <button class="btn-small btn-danger" data-id="${t.id}">Excluir</button>
         </div>
       </div>
