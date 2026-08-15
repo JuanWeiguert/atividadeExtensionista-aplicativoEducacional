@@ -297,9 +297,9 @@ p { color: var(--muted); line-height: 1.5; }
 
 .task-detail-img {
   display: block;
-  width: auto;
-  max-width: 280px;
-  max-height: 300px;
+  width: 100%;
+  max-width: 360px;
+  height: auto;
   height: auto;
   object-fit: contain;
   margin: 0 auto 24px;
