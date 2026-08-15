@@ -286,3 +286,37 @@ p { color: var(--muted); line-height: 1.5; }
   flex-direction: column;
   justify-content: center;
 }
+
+/* Página de detalhes da tarefa */
+.task-details {
+  text-align: center;
+  padding: 20px 16px;
+}
+
+.task-details h1 {
+  margin: 10px 0 24px;
+  font-size: 24px;
+}
+
+.task-details-image {
+  width: 100%;
+  max-width: 320px;
+  height: 220px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 24px;
+  border: 1px solid #999;
+}
+
+.task-details-description {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--text);
+  margin: 0 auto;
+  max-width: 360px;
+}
+
+.task-details .btn.link {
+  margin-top: 40px;
+}
