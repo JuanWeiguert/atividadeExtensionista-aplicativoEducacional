@@ -174,17 +174,30 @@ function renderTasksList() {
     list.appendChild(item);
   });
 
-  // Ação de excluir
-  list.addEventListener("click", (e) => {
-    const btn = e.target.closest("button.btn-danger[data-id]");
-    if (!btn) return;
-     
-    const id = Number(btn.dataset.id);
+ list.addEventListener("click", (e) => {
+
+  // BOTÃO ABRIR TAREFA
+  const openBtn = e.target.closest("button.btn-open[data-id]");
+
+  if (openBtn) {
+    const id = Number(openBtn.dataset.id);
+    window.location.href = `detalhes.html?id=${id}`;
+    return;
+  }
+
+  // BOTÃO EXCLUIR
+  const deleteBtn = e.target.closest("button.btn-danger[data-id]");
+
+  if (deleteBtn) {
+    const id = Number(deleteBtn.dataset.id);
+
     const tasks = getTasks().filter(t => t.id !== id);
+
     setTasks(tasks);
-    renderTasksList();               // re-render
-  }, { once: true });
-}
+    renderTasksList();
+  }
+
+}, { once: true });
 
 function renderDynamicActivity() {
   const container = document.getElementById("activityContainer");
