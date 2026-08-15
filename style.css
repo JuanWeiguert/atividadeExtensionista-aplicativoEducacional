@@ -319,3 +319,10 @@ p { color: var(--muted); line-height: 1.5; }
 .task-detail-img + .task-detail-description {
   margin-top: 10px;
 }
+
+.task-back {
+  width: auto;
+  display: block;
+  margin: 40px auto 0;
+  text-align: center;
+}
