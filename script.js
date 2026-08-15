@@ -198,7 +198,8 @@ function renderTasksList() {
   }
 
 }, { once: true });
-
+}
+   
 function renderDynamicActivity() {
   const container = document.getElementById("activityContainer");
   if (!container) return;
