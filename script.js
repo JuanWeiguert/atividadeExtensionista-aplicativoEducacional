@@ -176,8 +176,9 @@ function renderTasksList() {
 
   // Ação de excluir
   list.addEventListener("click", (e) => {
-    const btn = e.target.closest("button[data-id]");
+    const btn = e.target.closest("button.btn-danger[data-id]");
     if (!btn) return;
+     
     const id = Number(btn.dataset.id);
     const tasks = getTasks().filter(t => t.id !== id);
     setTasks(tasks);
