@@ -189,7 +189,15 @@ p { color: var(--muted); line-height: 1.5; }
   border: 0;
   cursor: pointer;
 }
-.btn-danger { background: var(--danger); color: #fff; }
+
+.btn-open {
+  background: #3498db;
+  color: #fff;
+}
+
+.btn-danger { 
+   background: var(--danger);
+   color: #fff; }
 
 /* Logo maior na tela inicial */
 .logo-big {
