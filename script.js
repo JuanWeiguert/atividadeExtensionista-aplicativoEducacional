@@ -230,10 +230,41 @@ function renderDynamicBook() {
   <h1>${data.title}</h1>
   <p>${data.text}</p>
 `;
-
-
 }
 
+function renderTask() {
+  const container = document.getElementById("taskContainer");
+
+  if (!container) return;
+
+  const id = Number(getQueryParam("id"));
+
+  const tasks = getTasks();
+
+  const task = tasks.find(t => t.id === id);
+
+  if (!task) {
+    container.innerHTML = `
+      <p>Tarefa não encontrada.</p>
+    `;
+    return;
+  }
+
+  const image = task.image
+    ? `<img src="${task.image}" alt="${task.title}" class="task-detail-img">`
+    : `<div class="task-no-image">Sem imagem</div>`;
+
+  container.innerHTML = `
+    <h1 class="task-detail-title">${task.title}</h1>
+
+    ${image}
+
+    <p class="task-detail-description">
+      ${task.description || "Nenhuma descrição informada."}
+    </p>
+  `;
+}
+   
 /* -------------------------
    Handlers de formulários
 ------------------------- */
@@ -355,5 +386,5 @@ document.addEventListener("DOMContentLoaded", () => {
   renderTasksList();
   renderDynamicActivity();
   renderDynamicBook();
-
+  renderTask();
 });
