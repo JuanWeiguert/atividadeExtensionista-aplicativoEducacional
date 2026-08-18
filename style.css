@@ -298,8 +298,8 @@ p { color: var(--muted); line-height: 1.5; }
 .task-detail-img {
   display: block;
   width: 100%;
-  max-width: 360px;
-  height: auto;
+  max-width: 390px;
+  height: 350px;
   object-fit: contain;
   margin: 0 auto 24px;
   border: 1px solid #999;
