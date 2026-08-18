@@ -319,9 +319,9 @@ p { color: var(--muted); line-height: 1.5; }
   margin-top: 10px;
 }
 
-.task-back {
-  width: auto;
-  display: block;
-  margin: 40px auto 0;
-  text-align: center;
+/* Links secundários não ocupam a largura inteira */
+.btn.link {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
