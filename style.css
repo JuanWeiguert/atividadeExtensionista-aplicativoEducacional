@@ -230,12 +230,12 @@ p { color: var(--muted); line-height: 1.5; }
 }
 
 .book-img {
-  width: 200px;        /* mantém o tamanho que estava */
-  height: auto;
   display: block;
-  margin: 16px auto;   /* centraliza */
-  border-radius: 12px; /* cantos arredondados */
-  object-fit: cover;
+  width: 220px;
+  max-height: 350px;
+  object-fit: contain;
+  margin: 20px auto 25px;
+  border-radius: 12px;
 }
 
 .menu {
@@ -330,15 +330,6 @@ p { color: var(--muted); line-height: 1.5; }
   width: 100%;
   max-width: 380px;
   margin: 0 auto;
-}
-
-.book-img {
-  display: block;
-  width: 220px;
-  max-height: 350px;
-  object-fit: contain;
-  margin: 20px auto 25px;
-  border-radius: 12px;
 }
 
 #bookContainer h1 {
