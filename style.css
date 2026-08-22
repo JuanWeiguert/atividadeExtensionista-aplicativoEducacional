@@ -325,3 +325,31 @@ p { color: var(--muted); line-height: 1.5; }
   margin-left: auto;
   margin-right: auto;
 }
+
+#bookContainer {
+  width: 100%;
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+.book-img {
+  display: block;
+  width: 220px;
+  max-height: 350px;
+  object-fit: contain;
+  margin: 20px auto 25px;
+  border-radius: 12px;
+}
+
+#bookContainer h1 {
+  font-size: 30px;
+  margin: 10px 0 20px;
+}
+
+#bookContainer p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0 auto;
+  max-width: 360px;
+  text-align: center;
+}
