@@ -344,3 +344,43 @@ p { color: var(--muted); line-height: 1.5; }
   max-width: 360px;
   text-align: center;
 }
+
+/* ===== Página do livro ===== */
+
+.main-book {
+  padding: 10px 16px 20px;
+}
+
+.main-book #bookContainer {
+  width: 100%;
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+.main-book .book-img {
+  display: block;
+  width: auto;
+  max-width: 85%;
+  height: 300px;
+  object-fit: contain;
+  margin: 10px auto 20px;
+  border-radius: 12px;
+}
+
+.main-book #bookContainer h1 {
+  font-size: 28px;
+  margin: 0 0 18px;
+  text-align: center;
+}
+
+.main-book #bookContainer p {
+  font-size: 17px;
+  line-height: 1.45;
+  margin: 0 auto;
+  max-width: 360px;
+  text-align: center;
+}
+
+.main-book .btn.link {
+  margin-top: 28px;
+}
