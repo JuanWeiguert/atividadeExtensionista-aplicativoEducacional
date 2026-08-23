@@ -319,32 +319,6 @@ p { color: var(--muted); line-height: 1.5; }
   margin-top: 10px;
 }
 
-/* Links secundários não ocupam a largura inteira */
-.btn.link {
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#bookContainer {
-  width: 100%;
-  max-width: 380px;
-  margin: 0 auto;
-}
-
-#bookContainer h1 {
-  font-size: 30px;
-  margin: 10px 0 20px;
-}
-
-#bookContainer p {
-  font-size: 18px;
-  line-height: 1.5;
-  margin: 0 auto;
-  max-width: 360px;
-  text-align: center;
-}
-
 /* ===== Página do livro ===== */
 
 .main-book {
@@ -383,40 +357,4 @@ p { color: var(--muted); line-height: 1.5; }
 
 .main-book .btn.link {
   margin-top: 28px;
-}
-
-/* ===== Ajuste definitivo da página do livro ===== */
-
-.main-book {
-  padding: 10px 16px 20px;
-}
-
-.main-book #bookContainer {
-  width: 100%;
-  max-width: 380px;
-  margin: 0 auto;
-}
-
-.main-book #bookContainer .book-img {
-  display: block;
-  width: auto;
-  max-width: 85%;
-  height: 300px;
-  object-fit: contain;
-  margin: 10px auto 20px;
-  border-radius: 12px;
-}
-
-.main-book #bookContainer h1 {
-  font-size: 28px;
-  margin: 0 0 18px;
-  text-align: center;
-}
-
-.main-book #bookContainer p {
-  font-size: 17px;
-  line-height: 1.45;
-  margin: 0 auto;
-  max-width: 360px;
-  text-align: center;
 }
