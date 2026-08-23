@@ -130,7 +130,7 @@ const BOOKS = {
     title: "Saber perder",
     img: "assets/saber-perder.jpg",
     text:
-      "Este livro infantil conta a história de Frederico, um jovem nadador que, apesar de todo o seu esforço e treino, perde uma competição nacional e tem de aprender a lidar com a frustração e a decepção. Através da jornada de Frederico, a autora explora os sentimentos complexos que acompanham uma derrota, mostrando que aceitar a perda é o primeiro passo para a superá-la e para o crescimento pessoal, promovendo a resiliência e o autoconhecimento. ",
+      "Frederico é um jovem nadador que enfrenta a frustração após perder uma competição. A história mostra como ele aprende a aceitar a derrota e a superar os desafios, desenvolvendo resiliência e autoconhecimento.",
   },
 };
 
