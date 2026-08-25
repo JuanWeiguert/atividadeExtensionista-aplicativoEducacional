@@ -348,7 +348,7 @@ p { color: var(--muted); line-height: 1.5; }
 }
 
 .main-book #bookContainer p {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.45;
   margin: 0 auto;
   max-width: 360px;
