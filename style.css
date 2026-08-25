@@ -231,8 +231,8 @@ p { color: var(--muted); line-height: 1.5; }
 
 .book-img {
   display: block;
-  width: 190px;
-  max-height: 320px;
+  width: 160px;
+  max-height: 290px;
   object-fit: contain;
   margin: 20px auto 25px;
   border-radius: 12px;
