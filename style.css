@@ -335,7 +335,7 @@ p { color: var(--muted); line-height: 1.5; }
   display: block;
   width: auto;
   max-width: 85%;
-  height: 270px;
+  height: 250px;
   object-fit: contain;
   margin: 10px auto 20px;
   border-radius: 12px;
