@@ -214,12 +214,12 @@ p { color: var(--muted); line-height: 1.5; }
 }
 
 .activity-img {
-  width: 100%;              /* ocupa toda a largura do container */
-  max-width: 100%;
+  width: 80%;              /* ocupa toda a largura do container */
+  max-width: 300%;
   height: auto;             /* mantém proporção da imagem */
   display: block;
   margin: 30px auto 12px;      /* centraliza e adiciona margem inferior */
-  object-fit: cover;        /* mantém proporção, cortando se necessário */
+  object-fit: contain;        /* mantém proporção, cortando se necessário */
   border-radius: 12px;      /* cantos arredondados */
 }
 
