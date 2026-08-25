@@ -335,14 +335,14 @@ p { color: var(--muted); line-height: 1.5; }
   display: block;
   width: auto;
   max-width: 85%;
-  height: 300px;
+  height: 270px;
   object-fit: contain;
   margin: 10px auto 20px;
   border-radius: 12px;
 }
 
 .main-book #bookContainer h1 {
-  font-size: 28px;
+  font-size: 25px;
   margin: 0 0 18px;
   text-align: center;
 }
